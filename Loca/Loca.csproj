@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="france-flag-logo-DBC61B59A7-seeklogo.com.png" />
+    <None Remove="united-kingdom-flag-logo-1088704B5E-seeklogo.com.png" />
+    <None Remove="Без названия.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="france-flag-logo-DBC61B59A7-seeklogo.com.png" />
+    <Resource Include="united-kingdom-flag-logo-1088704B5E-seeklogo.com.png" />
+    <Resource Include="Без названия.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Localization.en.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Localization.en.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Localization.en.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Localization.en.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

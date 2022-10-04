@@ -1,0 +1,29 @@
+﻿<Window x:Class="Loca.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Loca"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="button_ua" Content="" HorizontalAlignment="Left" Margin="500,10,0,0" VerticalAlignment="Top" Width="43" Height="25" Click="button_ua_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/Без названия.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="button_uk" Content="" HorizontalAlignment="Left" Margin="600,10,0,0" VerticalAlignment="Top" Width="43" Height="25" Click="button_uk_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/united-kingdom-flag-logo-1088704B5E-seeklogo.com.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="button_fr" Content="" HorizontalAlignment="Left" Margin="700,10,0,0" VerticalAlignment="Top" Width="43" Height="25" Click="button_fr_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/france-flag-logo-DBC61B59A7-seeklogo.com.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="button1" Content="Hello" HorizontalAlignment="Left" Margin="75,135,0,0" VerticalAlignment="Top" Width="212"/>
+        <Button x:Name="button2" Content="How are you" HorizontalAlignment="Left" Margin="75,197,0,0" VerticalAlignment="Top" Width="212"/>
+        <Button x:Name="button3" Content="Goodbye" HorizontalAlignment="Left" Margin="75,265,0,0" VerticalAlignment="Top" Width="212"/>
+    </Grid>
+</Window>
